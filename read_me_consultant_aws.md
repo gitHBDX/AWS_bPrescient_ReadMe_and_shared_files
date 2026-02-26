@@ -103,7 +103,7 @@ locals {
 }
 ```
 
-### Create 2 hbdx/hummingbird-environments (conda)
+### Create two hbdx/hummingbird-environments (conda)
 
 To install Conda packages from SageMaker in this environment, configure Conda to use the internal proxy:
 
