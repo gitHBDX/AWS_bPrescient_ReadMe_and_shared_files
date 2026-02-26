@@ -78,7 +78,7 @@ Git credentials are automatically configured by the lifecycle config.
 
 ### Allowed Instance Types
 
-Warning: datasets are large (around 8GB)! takes quite a while to load! use a large instance with enough memory
+Warning: datasets are large (around 16GB)! takes quite a while to load! use a large instance with enough memory
 
 ```bash
 locals {
@@ -89,7 +89,7 @@ locals {
     "ml.t3.2xlarge",
     "ml.m5.large",
     "ml.m5.xlarge",
-    "ml.m5.2xlarge",
+    "ml.m5.2xlarge", # use this one for smooth running space if GPU-based
     "ml.g4dn.xlarge",
     "ml.g4dn.2xlarge",
     "ml.g6e.2xlarge",
