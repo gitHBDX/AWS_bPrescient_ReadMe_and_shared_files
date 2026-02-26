@@ -174,14 +174,15 @@ while still being in the hummingbird folder (which contains the environment file
 After installation to use the installed environment in jupyternotebook, do this:
 
   - Install ipykernel for the hbdx_cpu-environment
+
   ```bash
   python -m ipykernel install --user --name hbdx_cpu --display-name "hbdx_cpu"
   ```
-  - Stop the Jupyterlab instance and start it again. Then you should see it in the kernel-dropdown of a jupyternotebook
+  - In case, it is still not showing, stop the Jupyterlab instance and start it again. Then you should see it in the kernel-dropdown of a jupyternotebook
 
 
 
-### Example: A test for loading an anndata
+### Example: A test for loading an anndata with the hummingbird-environment
 
 1. Choose an instance type with enough memory, e.g. "ml.t3.xlarge" because our anndatas are around 7 GB big.
 2. Open the terminal in sagemaker-studio and download the data
@@ -198,9 +199,9 @@ ls -lsh ~/data
 
 Loading a anndata
 ```python
-import anndata
+import hummingbird as hbdx
 path = "/home/sagemaker-user/data/datasets/LC__ngs__DI_HB_GEL__wo_Boston_II_Grosshansdorf-26.02.0.h5ad"
-ad = anndata.read_h5ad(path)
+ad = hbdx.io.load(path)
 ad.obs
 ```
 
