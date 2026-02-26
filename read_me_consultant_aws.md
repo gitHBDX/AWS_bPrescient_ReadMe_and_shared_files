@@ -59,12 +59,12 @@ git clone <codecommit_clone_url>
 
 # hummingbird repo: main hummingbird repo with ground functions
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/hummingbird
-# if needed, change to main
+# if needed, change to master
 git checkout master
 
 # classifynder repo: machine learning
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/classifynder
-# if needed, change to main
+# if needed, change to master
 git checkout master
 
 # hummgingbird_snRNA_anno repo: feature annotation pipeline
