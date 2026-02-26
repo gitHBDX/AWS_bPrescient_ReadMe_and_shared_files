@@ -71,10 +71,10 @@ Git credentials are automatically configured by the lifecycle config.
 
 - **No internet access** -- you cannot access external websites, APIs, or download from the internet
 - **No data download** -- you cannot copy data out of the environment to your local machine
-- **Instance types are restricted** -- only pre-approved instance types are available
+- **Instance types are restricted** -- only pre-approved instance types are available, see section below "Allowed Instance Types"
 - **Sessions auto-stop** after 2 hours of inactivity to save costs
 - **All actions are logged** via CloudTrail
-- **Conda usage is only offline currently** Conda packages could be installed via local conda-files. Let us know which packages are needed.
+- **Conda package installation via internet works** Internet traffic to install condapackages is allowed
 
 ### Allowed Instance Types
 
