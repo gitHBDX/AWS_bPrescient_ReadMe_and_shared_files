@@ -122,52 +122,54 @@ locals {
 To install Conda packages from SageMaker in this environment, configure Conda to use the internal proxy:
 
 Edit ~/.condarc:
-```bash
-nano ~/.condarc
-```
+
+  ```bash
+  nano ~/.condarc
+  ```
 
 !!! The content should be ONLY this !!!
 After editing, to save, hit "CNTRL+X" and write "yes" and hit "ENTER"
-```bash
 
-channels:
-  - conda-forge
-offline: false
-proxy_servers:
-  http: http://10.0.100.233:3128
-  https: http://10.0.100.233:3128
-
-```
+  ```bash
+  channels:
+    - conda-forge
+  offline: false
+  proxy_servers:
+    http: http://10.0.100.233:3128
+    https: http://10.0.100.233:3128
+  ```
 
 To get the updated yml-files:
 
-```bash
-cd ~/hummingbird
-git pull
-```
+  ```bash
+  cd ~/hummingbird
+  git pull
+  ```
 
 Notes for CPU:
 - use hbdx.cpu.aws.yaml for cpu-instances
 - the created env will called "hbdx_cpu"
 
-```bash
-conda env create -f ~/hummingbird/hbdx.cpu.aws.yml 
-```
+  ```bash
+  conda env create -f ~/hummingbird/hbdx.cpu.aws.yml 
+  ```
+
 
 Notes for GPU:
 - use hbdx.cuda.aws.yaml for gpu-instances
 - the created env will called "hbdx_cuda"
 
-```bash
-conda env create -f ~/hummingbird/hbdx.cuda.aws.yml 
-```
+  ```bash
+  conda env create -f ~/hummingbird/hbdx.cuda.aws.yml 
+  ```
+
 
 Install the `hummingbird` packge
 while still being in the hummingbird folder (which contains the environment files)
 
-```bash
-pip install --no-build-isolation --no-deps -e .
-```
+  ```bash
+  pip install --no-build-isolation --no-deps -e .
+  ```
 
 
 ### Example: A test for loading an anndata
