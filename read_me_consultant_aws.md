@@ -165,7 +165,7 @@ Notes for GPU:
 
 
 Install the `hummingbird` package and `classifynder` package
-while still being in the hummingbird folder (which contains the environment files)
+while still being in the respective hummingbird or classifynder folder (which contains the environment files)
 
   ```bash
   conda activate hbdx_cpu
