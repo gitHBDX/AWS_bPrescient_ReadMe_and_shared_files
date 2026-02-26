@@ -103,12 +103,12 @@ Warning: datasets are large (around 16GB)! takes quite a while to load! use a la
 locals {
   allowed_instance_types = [
     "ml.t3.medium",
-    "ml.t3.large",
-    "ml.t3.xlarge", # use this for inital setup and playing around
+    "ml.t3.large", # use this for inital setup and playing around
+    "ml.t3.xlarge", 
     "ml.t3.2xlarge", 
     "ml.m5.large",
     "ml.m5.xlarge",
-    "ml.m5.2xlarge", # use this one for a smooth running space if GPU-based
+    "ml.m5.2xlarge", # if you need more RAM and power, use this one for a smooth running space (CPU-based)
     "ml.g4dn.xlarge",
     "ml.g4dn.2xlarge",
     "ml.g6e.2xlarge",
@@ -164,10 +164,16 @@ Notes for GPU:
   ```
 
 
-Install the `hummingbird` packge
+Install the `hummingbird` package and `classifynder` package
 while still being in the hummingbird folder (which contains the environment files)
 
   ```bash
+  conda activate hbdx_cpu
+
+  cd ~/hummingbird
+  pip install --no-build-isolation --no-deps -e .
+
+  cd ~/classifynder
   pip install --no-build-isolation --no-deps -e .
   ```
 
@@ -178,6 +184,7 @@ After installation to use the installed environment in jupyternotebook, do this:
   ```bash
   python -m ipykernel install --user --name hbdx_cpu --display-name "hbdx_cpu"
   ```
+  - Select the right kernel in the dropbdow of newly started jupyternotebook
   - In case, it is still not showing, stop the Jupyterlab instance and start it again. Then you should see it in the kernel-dropdown of a jupyternotebook
 
 
