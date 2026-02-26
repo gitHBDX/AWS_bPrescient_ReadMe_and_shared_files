@@ -148,7 +148,7 @@ conda env create -f ~/hummingbird/hbdx.cuda.aws.yml
 
 ### Example: A test for loading an anndata
 
-1. Choose an instance type with enough memory, e.g. "ml.t3.large" because our anndatas are around 7 GB big.
+1. Choose an instance type with enough memory, e.g. "ml.t3.xlarge" because our anndatas are around 7 GB big.
 2. Open the terminal in sagemaker-studio and download the data
 3. Load a anndata in a jupyter-notebook
 
