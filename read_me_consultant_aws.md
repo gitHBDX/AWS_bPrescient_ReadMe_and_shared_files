@@ -59,22 +59,22 @@ git clone <codecommit_clone_url>
 
 # hummingbird repo: main hummingbird repo with ground functions
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/hummingbird
-# by cloning you are on the branch 'origin/MRN_normalization'; change to master
+# if needed, change to main
 git checkout master
 
 # classifynder repo: machine learning
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/classifynder
-# by cloning you are on the branch 'origin/RNA_Classification_Nature'; change to master
+# if needed, change to main
 git checkout master
 
 # hummgingbird_snRNA_anno repo: feature annotation pipeline
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/hummingbird_sRNA_anno
-# change to main
+# if needed, change to main
 git checkout main
 
 # bPrescient_HBDx_1862 repo: the bPrescient-team is developing here their own code
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/bPrescient_HBDx_1862
-# change to main
+# if needed, change to main
 git checkout main
 ```
 
