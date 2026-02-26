@@ -1,5 +1,6 @@
 ### Important Links:
-- for this ReadMe: https://github.com/gitHBDX/AWS_bPrescient_ReadMe_and_shared_files.git
+- for this ReadMe: https://github.com/gitHBDX/AWS_bPrescient_ReadMe_and_shared_files/blob/main/read_me_consultant_aws.md
+- for all ReadMes: https://github.com/gitHBDX/AWS_bPrescient_ReadMe_and_shared_files
 - for the shared fileds: https://biomarkers-my.sharepoint.com/:f:/g/personal/mkahraman_hb-dx_com/IgCzDpSrYlKMQY0ZfDv6mBiHAeeueBSTaLzCt1dFrPRBCPI?e=iQwOVp
 
 ### Logging In
