@@ -90,11 +90,11 @@ locals {
   allowed_instance_types = [
     "ml.t3.medium",
     "ml.t3.large",
-    "ml.t3.xlarge",
-    "ml.t3.2xlarge",
+    "ml.t3.xlarge", # use this for inital setup and playing around
+    "ml.t3.2xlarge", 
     "ml.m5.large",
     "ml.m5.xlarge",
-    "ml.m5.2xlarge", # use this one for smooth running space if GPU-based
+    "ml.m5.2xlarge", # use this one for a smooth running space if GPU-based
     "ml.g4dn.xlarge",
     "ml.g4dn.2xlarge",
     "ml.g6e.2xlarge",
@@ -148,7 +148,7 @@ conda env create -f ~/hummingbird/hbdx.cuda.aws.yml
 
 ### Example: A test for loading an anndata
 
-1. Choose the instance type "ml.t3.large" because our anndatas are around 7 GB big.
+1. Choose an instance type with enough memory, e.g. "ml.t3.large" because our anndatas are around 7 GB big.
 2. Open the terminal in sagemaker-studio and download the data
 3. Load a anndata in a jupyter-notebook
 
