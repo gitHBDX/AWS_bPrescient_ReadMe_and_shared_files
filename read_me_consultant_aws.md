@@ -80,6 +80,7 @@ Git credentials are automatically configured by the lifecycle config.
 
 Warning: datasets are large (around 8GB)! takes quite a while to load! use a large instance with enough memory
 
+```bash
 locals {
   allowed_instance_types = [
     "ml.t3.medium",
@@ -95,6 +96,7 @@ locals {
     "system",
   ]
 }
+```
 
 ### Create 2 hbdx/hummingbird-environments (conda)
 
