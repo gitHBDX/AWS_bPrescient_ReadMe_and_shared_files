@@ -204,7 +204,7 @@ aws s3 sync s3://$DATA_BUCKET/data/ ~/data
 ls -lsh ~/data
 ```
 
-Loading a anndata
+Loading an anndata
 ```python
 import hummingbird as hbdx
 path = "/home/sagemaker-user/data/datasets/LC__ngs__DI_HB_GEL__wo_Boston_II_Grosshansdorf-26.02.0.h5ad"
