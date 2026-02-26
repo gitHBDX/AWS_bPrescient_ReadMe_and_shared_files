@@ -102,6 +102,7 @@ Warning: datasets are large (around 16GB)! takes quite a while to load! use a la
 ```bash
 locals {
   allowed_instance_types = [
+    #### CPU ####
     "ml.t3.medium",
     "ml.t3.large", # use this for inital setup and playing around
     "ml.t3.xlarge", 
@@ -109,6 +110,7 @@ locals {
     "ml.m5.large",
     "ml.m5.xlarge",
     "ml.m5.2xlarge", # if you need more RAM and power, use this one for a smooth running space (CPU-based)
+    #### GPU ####
     "ml.g4dn.xlarge",
     "ml.g4dn.2xlarge",
     "ml.g6e.2xlarge",
