@@ -124,8 +124,12 @@ To install Conda packages from SageMaker in this environment, configure Conda to
 Edit ~/.condarc:
 ```bash
 nano ~/.condarc
+```
 
-### content
+!!! The content should be ONLY this !!!
+After editing, to save, hit "CNTRL+X" and write "yes" and hit "ENTER"
+```bash
+
 channels:
   - conda-forge
 offline: false
@@ -134,7 +138,6 @@ proxy_servers:
   https: http://10.0.100.233:3128
 
 ```
-
 
 To get the updated yml-files:
 
