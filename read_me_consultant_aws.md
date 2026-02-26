@@ -171,6 +171,15 @@ while still being in the hummingbird folder (which contains the environment file
   pip install --no-build-isolation --no-deps -e .
   ```
 
+After installation to use the installed environment in jupyternotebook, do this:
+
+  - Install ipykernel for the hbdx_cpu-environment
+  ```bash
+  python -m ipykernel install --user --name hbdx_cpu --display-name "hbdx_cpu"
+  ```
+  - Stop the Jupyterlab instance and start it again. Then you should see it in the kernel-dropdown of a jupyternotebook
+
+
 
 ### Example: A test for loading an anndata
 
