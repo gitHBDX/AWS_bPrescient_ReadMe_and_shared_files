@@ -117,7 +117,7 @@ locals {
 }
 ```
 
-### Create two hbdx/hummingbird-environments (conda)
+### Create two hbdx/hummingbird-environments (conda) and install hummingbird
 
 To install Conda packages from SageMaker in this environment, configure Conda to use the internal proxy:
 
@@ -160,6 +160,13 @@ Notes for GPU:
 
 ```bash
 conda env create -f ~/hummingbird/hbdx.cuda.aws.yml 
+```
+
+Install the `hummingbird` packge
+while still being in the hummingbird folder (which contains the environment files)
+
+```bash
+pip install --no-build-isolation --no-deps -e .
 ```
 
 
