@@ -72,6 +72,12 @@ git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/bPrescient_
 
 Git credentials are automatically configured by the lifecycle config.
 
+Setup your git credentials
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
 ### Important Limitations
 
 - **No internet access** -- you cannot access external websites, APIs, or download from the internet
