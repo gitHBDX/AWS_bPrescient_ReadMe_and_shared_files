@@ -22,7 +22,6 @@
 
 ### Main folder to get HBDx datasets and notebooks
 
-
 Download the Dataset
 Create a local data directory and sync from S3:
 
@@ -34,6 +33,21 @@ aws s3 sync s3://$DATA_BUCKET/data/ ~/data
 
 ls -lsh ~/data/
 ```
+
+### Copying results to s3-bucket and HBDx-admin will download it
+
+Check which folders are existing and create a new one if needed; copy there the new results
+```bash
+# checking which folders/files are existing
+aws s3 ls s3://$UPLOADS_BUCKET/
+
+# create a new folder in the upload-bucket
+aws s3api put-object --bucket "$UPLOADS_BUCKET" --key "folder_name"
+
+# copy a file/folder to the upload-bucket
+aws s3 cp /path/to/file_or_folder s3://$UPLOADS_BUCKET/path/to/result_folder/
+```
+
 
 ### Installing Python Packages
 
