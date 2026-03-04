@@ -41,7 +41,7 @@ Check which folders are existing and create a new one if needed; copy to there t
 # checking which folders/files are existing
 aws s3 ls s3://$UPLOADS_BUCKET/
 
-# create a new folder in the upload-bucket
+# create a new folder in the upload-bucket, if needed
 aws s3api put-object --bucket "$UPLOADS_BUCKET" --key "folder_name"
 
 # copy a file/folder to the upload-bucket
