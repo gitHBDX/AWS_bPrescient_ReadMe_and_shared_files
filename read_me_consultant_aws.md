@@ -36,7 +36,7 @@ ls -lsh ~/data/
 
 ### Copying results to s3-bucket and HBDx-admin will download it
 
-Check which folders are existing and create a new one if needed; copy there the new results
+Check which folders are existing and create a new one if needed; copy to there the new results
 ```bash
 # checking which folders/files are existing
 aws s3 ls s3://$UPLOADS_BUCKET/
@@ -48,6 +48,7 @@ aws s3api put-object --bucket "$UPLOADS_BUCKET" --key "folder_name"
 aws s3 cp /path/to/file_or_folder s3://$UPLOADS_BUCKET/path/to/result_folder/
 ```
 
+Inform the HBDx-admin to download the new files/folders.
 
 ### Installing Python Packages
 
