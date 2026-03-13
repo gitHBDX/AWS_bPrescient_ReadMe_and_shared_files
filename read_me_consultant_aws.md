@@ -125,6 +125,7 @@ locals {
     "ml.m5.large",
     "ml.m5.xlarge", 
     "ml.m5.2xlarge", # quota value = 2 # if you need more RAM and power, use this one for a smooth running space (CPU-based)
+    "ml.c6a.24xlarge",
     ############ GPU/CUDA ############
     "ml.g4dn.xlarge",
     "ml.g4dn.2xlarge", # quota value = 2
