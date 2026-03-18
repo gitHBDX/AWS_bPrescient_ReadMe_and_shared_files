@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
-ALL USERS (Peter & Ishan)
+# ALL USERS (Peter & Ishan)
 
 ### 0) Freeze: nobody pushes during cleanup
 
@@ -10,7 +10,7 @@ git branch backup/pre-cleanup-$(date +%Y%m%d-%H%M%S)
 git bundle create ../pre-cleanup.bundle --all
 ```
 -----------------------------------------------------------------
-ONLY ONE of you
+# ONLY ONE of you
 
 ### 2) Ensure local branches exist (from your screenshot)
 ```bash
@@ -48,7 +48,7 @@ git push origin eda --force-with-lease
 ```
 
 -----------------------------------------------------------------
-ALL USERS (Peter & Ishan)
+# ALL USERS (Peter & Ishan)
 
 ### Then all other users must resync (no normal pull)
 ```bash
