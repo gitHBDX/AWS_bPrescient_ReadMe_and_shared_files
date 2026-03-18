@@ -14,27 +14,6 @@ This runbook is for cases where:
 
 Recover mirroring for a single affected repo (example: `bPrescient_HBDx_1862`) without losing anyone's work.
 
-## Execution Environment (SageMaker Only)
-
-This version assumes **all steps run inside SageMaker terminals**.
-
-In each SageMaker space terminal:
-
-```bash
-pwd
-whoami
-git --version
-aws sts get-caller-identity
-```
-
-Recommended for long-running sessions:
-
-```bash
-tmux new -s mirror-fix
-# If disconnected later:
-tmux attach -t mirror-fix
-```
-
 ## 0) Freeze Changes
 
 Both users stop pushing to the affected repo until reconciliation is complete.
