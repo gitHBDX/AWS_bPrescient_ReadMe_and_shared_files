@@ -3,6 +3,7 @@
 ### Case 1: Token expired
 
 The error message
+
     ```bash
     Looking in indexes: https://aws:****@ml-secure-env-884128492600.d.codeartifact.eu-central-1.amazonaws.com/pypi/ml-secure-env-pypi/simple/
     WARNING: 401 Error, Credentials not correct for https://ml-secure-env-884128492600.d.codeartifact.eu-central-1.amazonaws.com/pypi/ml-secure-env-pypi/simple/anndata/
@@ -15,6 +16,7 @@ pip is using your private index, but it gets 401 (Credentials not correct), so i
 Most likely the CodeArtifact token expired (common after ~12 hours).
 
 The solution:
+
     ```bash
     aws sts get-caller-identity
     aws codeartifact login --tool pip \
