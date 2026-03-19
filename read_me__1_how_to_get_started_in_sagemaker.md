@@ -88,7 +88,15 @@ git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/hummingbird
 git checkout main
 
 # bPrescient_HBDx_1862 repo: the bPrescient-team is developing here their own code
+# repo has mirror issues between codecommit (up-to-date) and github (not up-to-date)
 git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/bPrescient_HBDx_1862
+# if needed, change to main
+git checkout main
+
+
+# bPrescient_HBDx_1862_2 repo: the bPrescient-team is developing here their own code
+# new rep
+git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/bPrescient_HBDx_1862_2
 # if needed, change to main
 git checkout main
 ```
